@@ -1,0 +1,28 @@
+name:                pooled-map
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://github.com/bitonic/pooled-map#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Francesco Mazzoli, Patrick Chilton, Niklas Hambüchen
+maintainer:          f@mazzo.li
+copyright:           (c) 2016 Francesco Mazzoli, Patrick Chilton, Niklas Hambüchen
+category:            System
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Control.PooledMapConcurrently
+  build-depends:       base >= 4 && < 5
+                     , lifted-async
+                     , monad-control
+                     , transformers-base
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+
+source-repository head
+  type:     git
+  location: https://github.com/bitonic/pooled-map
